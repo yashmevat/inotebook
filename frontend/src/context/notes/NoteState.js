@@ -38,7 +38,7 @@ const addNote=async (title,description,tag)=>{
 
 //delete notes
 const deleteNote=async(id)=>{
-    const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
+   await fetch(`${host}/api/notes/deletenote/${id}`, {
         method: "DELETE", // *GET, POST, PUT, DELETE, etc.
          headers: {
            "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const deleteNote=async(id)=>{
 
 const editNote= async(id,title,description,tag)=>{
     //API call
-    const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
+    await fetch(`${host}/api/notes/updatenote/${id}`, {
        method: "PUT", // *GET, POST, PUT, DELETE, etc.
         headers: {
           "Content-Type": "application/json",
