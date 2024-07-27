@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-const host = "http://localhost:5000";
+const host = "https://inotebook-zz0w.onrender.com";
 
 const Login = (props) => {
     let navigate=useNavigate();
